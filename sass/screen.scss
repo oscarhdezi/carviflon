@@ -1,0 +1,255 @@
+/* Team iNobe
+ * Date 28/05/2013
+ * Hour 3:47
+ * Web  www.carviflon.com
+
+Fonts
+	font-family: 'Inder', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto', sans-serif;
+
+*/
+
+@import "compass/reset";
+
+@mixin sombras($red,$green,$black,$transparencia){
+	box-shadow        : 0px 0px 4px rgba($red,$green,$black,$transparencia);
+	-moz-box-shadow   : 0px 0px 4px rgba($red,$green,$black,$transparencia);
+	-webkit-box-shadow: 0px 0px 4px rgba($red,$green,$black,$transparencia);
+}
+@mixin boxSizing{
+	box-sizing        : border-box;
+	-moz-box-sizing   : border-box;
+	-webkit-box-sizing: border-box;
+}
+@mixin bordes($uno:4px){
+	border-radius        : $uno;
+	-moz-border-radius   : $uno;
+	-webkit-border-radius: $uno;
+}
+@mixin animacion{
+	transition        : all .5s ease-out;
+	-moz-transition   : all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+}
+body{
+	background: #002454;
+}
+footer{
+	@include boxSizing;
+	background : #d6d6d6;
+	color      : #333;
+	float      : left;
+	font-family: arial, sans-serif;
+	font-size  : 12px;
+	padding    : 5px;
+	text-align : center;
+	width      : 100%;
+}
+h1{
+	@include animacion;
+	text-shadow        : 1px 1px 5px rgba(0,160,244,.5);
+	-webkit-text-shadow: 1px 1px 5px rgba(0,160,244,.5);
+	color              : #0078b7;
+	font-family        : 'Ubuntu', sans-serif;
+	font-size          : 58px;
+}
+h2{
+	color      : #005bad;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size  : 26px;
+}
+p{
+	color      : white;
+	font-family: 'Roboto', sans-serif;
+	font-size  : 15px;
+}
+#galeria{
+	background: #e5e5e5;
+	float     : left;
+	padding   : 10px;
+	width     : 920px;
+}
+#logotipo{
+	float : left;
+	margin: 10px;
+	width : 350px;
+}
+#menu{
+	float : right;
+	margin: 20px 20px 0px 0px;
+	width : 330px;
+	ul{
+		margin: 0px;
+		li{
+			display: inline-block;
+			margin : 5px;
+			a{
+				color          : white;
+				font-family    : 'Ubuntu', sans-serif;
+				font-size      : 14px;
+				text-decoration: none;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+#mostrarProducto,#mostrarProducto2{
+	background: url(../img/fondo.gif)repeat-x;
+	height    : 50px;
+	display   : none;
+}
+#slogan{
+	float     : left;
+	text-align: center;
+	margin-top: 10px;
+	width     : 100%;
+}
+#tituloProducto{
+	float : left;
+	margin: 40px 50px 10px 50px;
+	width : 200px;
+}
+.bordeDerecho{
+	border-right : 1px solid #FFF;
+	padding-right: 13px;
+}
+.bordeGris{
+	border-right  : 1px solid #e0e0e0;
+	display       : table-cell;
+	vertical-align: middle;
+}
+.cincoPtfe{
+	margin: 13px 5px 0px 5px;
+	width : 18%;
+}
+.cincoPtfe, .cuatroNylamid{
+	float     : left;
+	text-align: center;
+	a{
+		@include animacion;
+		color          : #ea5300;
+		font-family    : 'Inder', sans-serif;
+		font-size      : 12px;
+		font-weight    : bold;
+		text-decoration: none;
+		&:hover{
+			color: #00a2c1;
+		}
+	}
+}
+.cuatroNylamid{
+	margin: 13px 5px 0px 5px;
+	width : 23%;
+}
+.derechos{
+	color      : white;
+	font-family: arial, sans-serif;
+	font-size  : 12px;
+}
+.facebook, .twitter, .youtube{
+	@include animacion;
+	float : left;
+	margin: 5px;
+	width : 50px;
+	&:hover{
+		margin-top: 10px;
+	}
+}
+.fondoAzul{
+	@include sombras(0,0,0,0.5);
+	background: #095392;
+}
+.fondoAzulTop{
+	@include boxSizing;
+	background : url(../img/header.gif) no-repeat;
+	height     : 132px;
+	padding-top: 20px;
+}
+.fondoBlanco{
+	@include animacion;
+	@include boxSizing;
+	background : white;
+	border-left: 10px solid #00c9ff;
+	padding    : 15px;
+	&:hover{
+		background: #00c9ff;
+		border-left: 10px solid #fff;
+	}
+	&:hover h1{
+		color: #fff;
+	}
+}
+.fotoInicio{
+	@include bordes;
+	@include boxSizing;
+	@include animacion;
+	background: white;
+	margin    : 10px;
+	padding   : 6px;
+	&:hover{
+		background : #00a7ff;
+	}
+}
+.interior{
+	@include boxSizing;
+	padding: 13px;
+	ul {
+		margin-left: 20px;
+		li{
+			color      : white;
+			font-family: 'Roboto', sans-serif;
+			font-size  : 15px;
+			list-style-type: square;
+		}
+	}
+}
+.linkProducto{
+	float     : left;
+	margin    : 13px 10px 10px 0px;
+	text-align: center;
+	width     : 200px;
+}
+.margenInterior{
+	@include boxSizing;
+	padding: 10px;
+}
+.productostxt{
+	color      : white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size  : 18px;
+}
+.redes{
+	@include boxSizing;
+	height: 65px;
+	padding-left: 80px;
+}
+.slogantxt{
+	color      : white;
+	font-family: 'Inder', sans-serif;
+	font-size  : 17px;
+}
+.tituloSomos, .tituloMision, .tituloVision{
+	background : #00a7ff;
+	color      : white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size  : 13px;
+	font-weight: bold;
+	padding    : 6px 10px;
+	position   : relative;
+	top        : -40px;
+	z-index    : 100;
+}
+.tituloSomos{
+	left : 151px;	
+}
+.tituloMision{
+	left : 215px;
+}
+.tituloVision{
+	left : 217px;
+}
