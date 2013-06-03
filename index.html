@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<title>Carviflon</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+	<link href='http://fonts.googleapis.com/css?family=Inder|Ubuntu|Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container fondoAzul"><!--CONTAINER-->
+		<section class="row"><!--CABECERA-->
+			<header class="span12">
+				<div id="logotipo">
+					<a href="http://www.carviflon.com">
+						<img src="img/logotipo-carviflon.png" alt="Carviflon" width="100%"/>
+					</a>
+					<div id="slogan">
+						<span class="slogantxt">LA INGENIERIA DEL PTFE EN LA INDUSTRIA</span>
+					</div>
+				</div>
+				<div id="menu"><!--MENU-->
+					<ul>
+						<li class="bordeDerecho">
+							<a href="http://www.carviflon.com">INICIO</a>
+						</li>
+						<li class="bordeDerecho">
+							<a href="catalogo.html">CATALOGO VIRTUAL</a>
+						</li>
+						<li>
+							<a href="contacto.html">CONTACTO</a>
+						</li>
+					</ul>
+				</div><!--END MENU-->
+			</header>
+			<article id="row"><!--PRODUCTOS-->
+				<div class="span12 fondoAzulTop">
+					<div id="tituloProducto">
+						<h2>PRODUCTOS</h2>
+					</div>
+					<div class="linkProducto">
+						<a href="javascript:void(0)" id="ptfe">
+							<img src="img/ptfe.png" alt="PTFE" width="200" height="63"/>
+						</a>
+					</div>
+					<div class="linkProducto">
+						<a href="javascript:void(0)" id="nylamid">
+							<img src="img/nylamid.png" alt="Nylamid" width="200" height="63"/>
+						</a>
+					</div>
+					<div class="linkProducto">
+						<a href="maquinados.html">
+							<img src="img/maquinados.png" alt="Maquinados" width="200" height="63"/>
+						</a>
+					</div>
+				</div>
+			</article><!--END PRODUCTOS-->
+			<article id="row"><!--SUBCATEGORIAS-->
+				<div class="span12">
+					<div id="mostrarProducto"></div>
+					<div id="mostrarProducto2"></div>
+				</div>
+			</article><!--END SUBCATEGORIAS-->
+		</section><!--END CABECERA-->
+		<section class="row"><!--GALERIA-->
+			<article class="span12" id="galeria">
+				<div id="myCarousel" class="carousel slide">
+                	<ol class="carousel-indicators">
+                		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                		<li data-target="#myCarousel" data-slide-to="1"></li>
+                		<li data-target="#myCarousel" data-slide-to="2"></li>
+                	</ol>
+                	<div class="carousel-inner">
+                		<div class="item active">
+                    		<img src="fotos/nylamid-carviflon.jpg" alt="">
+                  		</div>
+                  		<div class="item">
+                    		<img src="fotos/ptfe-carviflon.jpg" alt="">
+                  		</div>
+                  		<div class="item">
+                    		<img src="fotos/carviflon.jpg" alt="">
+                  		</div>
+                	</div>
+                	<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                	<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+              	</div>
+			</article>
+		</section><!--END GALERIA-->
+		<section class="row"><!--EMPRESA-->
+			<div class="span4 descripcion">
+				<div class="fotoInicio">
+					<a href="quienes-somos.html">
+						<img src="img/quienes-somos.jpg"/>
+					</a>
+				</div>
+				<span class="tituloSomos">QUIENES SOMOS</span>
+			</div>
+			<div class="span4 descripcion">
+				<div class="fotoInicio">
+					<a href="mision.html">
+						<img src="img/mision.jpg"/>
+					</a>
+				</div>
+				<span class="tituloMision">MISIÓN</span>
+			</div>
+			<div class="span4 descripcion">
+				<div class="fotoInicio">
+					<a href="vision.html">
+						<img src="img/vision.jpg"/>
+					</a>
+				</div>
+				<span class="tituloVision">VISIÓN</span>
+			</div>
+		</section><!--FIN EMPRESA-->
+		<div class="row">
+			<div class="span12">
+				<img src="img/separador.png" width="100%"/>
+			</div>
+		</div>
+		<section class="row">
+			<article class="span8 margenInterior">
+				<span class="derechos">CARVIFLON todos los Derechos Reservados. La información asi como las imagenes mostradas en este sitio son propiedad de CARVIFLON, quedando prohibido su reproducción parcial y total.</span>
+			</article>
+			<article class="span4 redes">
+				<div class="facebook">
+					<a href="#">
+						<img src="img/facebook.png">
+					</a>
+				</div>
+				<div class="twitter">
+					<a href="#">
+						<img src="img/twitter.png">
+					</a>
+				</div>
+				<div class="youtube">
+					<a href="#">
+						<img src="img/youtube.png">
+					</a>
+				</div>
+			</article>
+		</section>
+		<footer>
+			<h4>Desarrollado por iNobe</h4>
+		</footer>
+	</div><!--END CONTAINER-->
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="js/bootstrap-carousel.js"></script>
+	<script>
+		$(document).on("ready", main);
+			function main(){
+				$("#ptfe").click(function(){
+					$("#mostrarProducto2").hide();
+					$("#mostrarProducto").toggle(200);
+					$('#mostrarProducto').load('ptfe-listado.html');
+				});
+				$("#nylamid").click(function(){
+					$("#mostrarProducto").hide();
+					$("#mostrarProducto2").toggle(200);
+					$('#mostrarProducto2').load('nylamid-listado.html');
+				});
+			}
+	</script>
+</body>
+</html>
