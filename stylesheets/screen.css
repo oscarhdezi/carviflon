@@ -1,0 +1,400 @@
+/* Team iNobe
+ * Date 28/05/2013
+ * Hour 3:47
+ * Web  www.carviflon.com
+
+Fonts
+	font-family: 'Inder', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto', sans-serif;
+
+*/
+/* line 17, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 35, ../sass/screen.scss */
+body {
+  background: #002454;
+}
+
+/* line 38, ../sass/screen.scss */
+footer {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: #d6d6d6;
+  color: #333;
+  float: left;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 49, ../sass/screen.scss */
+h1 {
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  text-shadow: 1px 1px 5px rgba(0, 160, 244, 0.5);
+  -webkit-text-shadow: 1px 1px 5px rgba(0, 160, 244, 0.5);
+  color: #0078b7;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 58px;
+}
+
+/* line 57, ../sass/screen.scss */
+h2 {
+  color: #005bad;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+/* line 63, ../sass/screen.scss */
+p {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+/* line 68, ../sass/screen.scss */
+#galeria {
+  background: #e5e5e5;
+  float: left;
+  padding: 10px;
+  width: 920px;
+}
+
+/* line 74, ../sass/screen.scss */
+#logotipo {
+  float: left;
+  margin: 10px;
+  width: 350px;
+}
+
+/* line 79, ../sass/screen.scss */
+#menu {
+  float: right;
+  margin: 20px 20px 0px 0px;
+  width: 330px;
+}
+/* line 83, ../sass/screen.scss */
+#menu ul {
+  margin: 0px;
+}
+/* line 85, ../sass/screen.scss */
+#menu ul li {
+  display: inline-block;
+  margin: 5px;
+}
+/* line 88, ../sass/screen.scss */
+#menu ul li a {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+/* line 93, ../sass/screen.scss */
+#menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/* line 100, ../sass/screen.scss */
+#mostrarProducto, #mostrarProducto2 {
+  background: url(../img/fondo.gif) repeat-x;
+  height: 50px;
+  display: none;
+}
+
+/* line 105, ../sass/screen.scss */
+#slogan {
+  float: left;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* line 111, ../sass/screen.scss */
+#tituloProducto {
+  float: left;
+  margin: 40px 50px 10px 50px;
+  width: 200px;
+}
+
+/* line 116, ../sass/screen.scss */
+.bordeDerecho {
+  border-right: 1px solid #FFF;
+  padding-right: 13px;
+}
+
+/* line 120, ../sass/screen.scss */
+.bordeGris {
+  border-right: 1px solid #e0e0e0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 125, ../sass/screen.scss */
+.cincoPtfe {
+  margin: 13px 5px 0px 5px;
+  width: 18%;
+}
+
+/* line 129, ../sass/screen.scss */
+.cincoPtfe, .cuatroNylamid {
+  float: left;
+  text-align: center;
+}
+/* line 132, ../sass/screen.scss */
+.cincoPtfe a, .cuatroNylamid a {
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  color: #ea5300;
+  font-family: 'Inder', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 139, ../sass/screen.scss */
+.cincoPtfe a:hover, .cuatroNylamid a:hover {
+  color: #00a2c1;
+}
+
+/* line 144, ../sass/screen.scss */
+.cuatroNylamid {
+  margin: 13px 5px 0px 5px;
+  width: 23%;
+}
+
+/* line 148, ../sass/screen.scss */
+.derechos {
+  color: white;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+}
+
+/* line 153, ../sass/screen.scss */
+.facebook, .twitter, .youtube {
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  float: left;
+  margin: 5px;
+  width: 50px;
+}
+/* line 158, ../sass/screen.scss */
+.facebook:hover, .twitter:hover, .youtube:hover {
+  margin-top: 10px;
+}
+
+/* line 162, ../sass/screen.scss */
+.fondoAzul {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  background: #095392;
+}
+
+/* line 166, ../sass/screen.scss */
+.fondoAzulTop {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: url(../img/header.gif) no-repeat;
+  height: 132px;
+  padding-top: 20px;
+}
+
+/* line 172, ../sass/screen.scss */
+.fondoBlanco {
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: white;
+  border-left: 10px solid #00c9ff;
+  padding: 15px;
+}
+/* line 178, ../sass/screen.scss */
+.fondoBlanco:hover {
+  background: #00c9ff;
+  border-left: 10px solid #fff;
+}
+/* line 182, ../sass/screen.scss */
+.fondoBlanco:hover h1 {
+  color: #fff;
+}
+
+/* line 186, ../sass/screen.scss */
+.fotoInicio {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  background: white;
+  margin: 10px;
+  padding: 6px;
+}
+/* line 193, ../sass/screen.scss */
+.fotoInicio:hover {
+  background: #00a7ff;
+}
+
+/* line 197, ../sass/screen.scss */
+.interior {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 13px;
+}
+/* line 200, ../sass/screen.scss */
+.interior ul {
+  margin-left: 20px;
+}
+/* line 202, ../sass/screen.scss */
+.interior ul li {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  list-style-type: square;
+}
+
+/* line 210, ../sass/screen.scss */
+.linkProducto {
+  float: left;
+  margin: 13px 10px 10px 0px;
+  text-align: center;
+  width: 200px;
+}
+
+/* line 216, ../sass/screen.scss */
+.margenInterior {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 10px;
+}
+
+/* line 220, ../sass/screen.scss */
+.productostxt {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* line 226, ../sass/screen.scss */
+.redes {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 65px;
+  padding-left: 80px;
+}
+
+/* line 231, ../sass/screen.scss */
+.slogantxt {
+  color: white;
+  font-family: 'Inder', sans-serif;
+  font-size: 17px;
+}
+
+/* line 236, ../sass/screen.scss */
+.tituloSomos, .tituloMision, .tituloVision {
+  background: #00a7ff;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 10px;
+  position: relative;
+  top: -40px;
+  z-index: 100;
+}
+
+/* line 247, ../sass/screen.scss */
+.tituloSomos {
+  left: 151px;
+}
+
+/* line 250, ../sass/screen.scss */
+.tituloMision {
+  left: 215px;
+}
+
+/* line 253, ../sass/screen.scss */
+.tituloVision {
+  left: 217px;
+}
